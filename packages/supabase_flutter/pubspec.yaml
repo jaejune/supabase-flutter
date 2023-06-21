@@ -19,7 +19,10 @@ dependencies:
   http: '>=0.13.4 <2.0.0'
   meta: ^1.7.0
   sign_in_with_apple: ^4.3.0
-  supabase: ^1.9.4
+  supabase:
+    git:
+        url: https://github.com/jaejune/supabase-flutter.git
+        path: packages/supabase
   url_launcher: ^6.1.2
   webview_flutter: ^4.0.0
   path_provider: ^2.0.0
