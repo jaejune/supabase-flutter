@@ -439,7 +439,7 @@ class SupabaseStreamBuilder extends Stream<SupabaseStreamEvent> {
   /// Will add error to the stream if streamController is not closed
   void _addException(Object error, [StackTrace? stackTrace]) {
     if (!(_streamController?.isClosed ?? true)) {
-      _streamController?.addError(error, stackTrace ?? StackTrace.current);
+      _streamController?.addError(error, stackTrace);
     }
   }
 
